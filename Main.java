@@ -5,20 +5,25 @@ public class Main {
         Player p = new Player();
         Dealer d = new Dealer();
         Deck.initDeck();
+
         // プレイヤーがカードを２枚受け取る
         p.drawCard();
         p.recieveCard();
         p.drawCard();
         p.recieveCard();
+
         // ディーラーがカードを2枚受け取る
         d.drawCard();
         d.recieveCard();
         d.drawCard();
+
         // プレイヤーの現在の得点
         p.calcCard();
         p.playersSum();
+
         // プレイヤーの選択
         p.submitChoice();
+
         if (p.getCalcArrayNum() < 21) {
             // ディーラーのカード展開
             d.deployCard();
