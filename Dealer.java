@@ -7,6 +7,7 @@ public class Dealer extends Paticipant {
     public void addCard() {
         while (this.getCalcArrayNum() < 16) {
             this.drawCard();
+            this.calcCard();
             System.out.println("ディーラーが引いたカードは" + this.getRank() + "の" + this.getNumber() + "です。");
             this.dealersSum();
         }

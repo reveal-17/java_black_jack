@@ -26,6 +26,8 @@ public abstract class Paticipant {
     // メソッド
     public void calcCard() {
         List<Integer> arrayNum = getArrayNum();
+        // 合計点を0にして再び計算する
+        this.calcArrayNum = 0;
         for (int data : arrayNum) {
             this.calcArrayNum += data;
         }
